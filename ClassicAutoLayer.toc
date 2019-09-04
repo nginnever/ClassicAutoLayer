@@ -1,8 +1,8 @@
 ## Interface: 11302
 ## X-Min-Interface: 11302
 
-## Title: BrokenGame
-## Notes: BrokenGame
+## Title: ClassicAutoLayer
+## Notes: ClassicAutoLayer
 ## Author: Nathanroot
 ## Version: 1.2.1
 ## SavedVariablesPerCharacter: CodexConfig, CodexHistory, CodexBrowserFavorites, CodexColors
@@ -26,10 +26,6 @@ db\init.lua
 # database ruRU
 
 # libs
-lib\LibStub\LibStub.lua
-lib\CallbackHandler-1.0\CallbackHandler-1.0.xml
-lib\HereBeDragons\HereBeDragons-2.0.lua
-lib\HereBeDragons\HereBeDragons-Pins-2.0.lua
 
 # main
 main.lua
