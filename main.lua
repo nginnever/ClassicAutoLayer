@@ -30,24 +30,22 @@ local function chatFilter(self, event, msg, author, language, channel, ...)
         
         isSelf = false
         
-        for i= -1, getn{playerset} do
-            if author == playerset[i] then
-                isSelf = true
-            end           
+        if author == playerset[0] then
+            isSelf = true
         end
         
         if not isSelf then
-            table.insert(playerset, author)
+            -- table.insert(playerset, author)
             InviteUnit(author)
-            C_Timer.After(5, function()
-                UninviteUnit(author)
-            end)
+            -- C_Timer.After(5, function()
+            --    UninviteUnit(author)
+            -- end)
         end
         
-        if clearCounter == 10 then 
-            playerset = {}
-            playerset[0] = UnitName("player") .. "-Faerlina"
-        end
+        -- if clearCounter == 10 then 
+        --    playerset = {}
+        --    playerset[0] = UnitName("player") .. "-Faerlina"
+        -- end
         
     end
 end
