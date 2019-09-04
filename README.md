@@ -1,7 +1,11 @@
 # wow-classic-auto-layer
 A button that will ask all users of the addon to invite for an auto layering mechanism... layering is bad for the game wow
 
-How to use:
+## How it works:
+
+This addon gives you a button that when clicked, will send a message to a channel that all other addon users are listening on, a random listener will receive you request and auto invite you to their group for a new layer. While running this addon you may auto invite players at random. You can turn off the addon if you do not want to do this but keeping it on is like seeding a peer-to-peer network and improves the health of the whole system. 
+
+## How to use:
 
 Install
 1. Download ZIP file at https://github.com/nginnever/ClassicAutoLayer
