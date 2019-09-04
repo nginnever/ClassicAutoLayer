@@ -16,6 +16,12 @@ button:SetSize(80, 25)
 button:SetText("I <3 retail")
 button:SetPoint("CENTER", 0,400)
 button:SetMovable(true)
+button:SetMovable(true)
+button:EnableMouse(true)
+button:RegisterForDrag("LeftButton")
+
+button:SetScript("OnDragStart", button.StartMoving)
+button:SetScript("OnDragStop", button.StopMovingOrSizing)
 
 button:RegisterEvent("CHAT_MSG_CHANNEL")
 
