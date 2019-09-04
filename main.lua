@@ -54,5 +54,5 @@ button:SetScript("OnEvent", chatFilter)
 
 button:SetScript("OnClick", function()
     print("looking for new layer...")
-    SendChatMessage("layerme", "CHANNEL", nil, (GetChannelName("layerme")))
+    SendChatMessage("layerme", "CHANNEL", nil, (GetChannelName("autolayer")))
 end)
