@@ -1,12 +1,11 @@
-print("Layering is about to get worse?")
+print("Auto Layering Initialized")
 
 local clearCounter = 0
 local playerset = {}
 playerset[0] = UnitName("player") .. "-Faerlina"
-print(playerset[0])
 
 function load()
-    JoinChannelByName("betalayer")
+    JoinChannelByName("layerme")
 end
 
 load()
@@ -29,8 +28,6 @@ local function chatFilter(self, event, msg, author, language, channel, ...)
     if msg:find("layerme") then
         clearCounter = clearCounter + 1
         
-        print("inviting player " .. author)
-        
         isSelf = false
         
         for i= -1, getn{playerset} do
@@ -43,9 +40,8 @@ local function chatFilter(self, event, msg, author, language, channel, ...)
             table.insert(playerset, author)
             InviteUnit(author)
             C_Timer.After(5, function()
-                print("kicking player")
                 UninviteUnit(author)
-            end)    
+            end)
         end
         
         if clearCounter == 10 then 
