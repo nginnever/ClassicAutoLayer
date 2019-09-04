@@ -29,13 +29,11 @@ local function chatFilter(self, event, msg, author, language, channel, ...)
         
         for i= -1, getn{playerset} do
             if author == playerset[i] then
-                print("found self in database")
                 isSelf = true
             end           
         end
         
         if not isSelf then
-            print(playerset[0])
             table.insert(playerset, author)
             InviteUnit(author)
             C_Timer.After(5, function()
